@@ -1,8 +1,8 @@
 imgPath = 'C:\Users\WINSTON\Desktop\1.1/';        % 图像库路径
 imgDir  = dir([imgPath '*.jpg']); % 遍历所有jpg格式文件
-n = length(imgDir);               % n为样本的个数
+n = length(imgDir);                   % n为样本的个数
 M = zeros(n,16);  
-for k = 1:n                       % 遍历结构体就可以一一处理图片了
+for k = 1:n                                % 遍历结构体就可以一一处理图片了
     R = imread([imgPath imgDir(k).name]); %读取每张图片
     highsplit=4;                                     % 设置对高平均切割为几份
     widesplit=4;                                     % 设置对宽平均切割为几份
